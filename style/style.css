@@ -216,9 +216,7 @@
 }
 
 .allDepartment_list{
-   
     display: none;
-    
     max-width: 400px;
 }
 
@@ -236,9 +234,39 @@
 }
 
 /* Banner Section */
-.bannerSection{
+
+.bannerSection {
+    /* position: relative; */
+}
+
+.bannerSection .carousel_container{
     border: 1px solid tomato;
     height: 400px;
+    margin: 30px auto;
+    width: 1440px;
+    display: flex;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.img_container{
+    width: 100%;
+}
+
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    padding: 15px;
+    height: 100px;
+}
+
+#rightArrow{
+    right: 220px;
+}
+
+#leftArrow{
+    left: 220px;
 }
 
 /* Offer Section */

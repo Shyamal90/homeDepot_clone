@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/64d8096832.js" crossorigin="anonymous"></script>
+    <title>The Home Depot: sign in, create account</title>
+    <link rel = "icon" href ="https://assets.homedepot-static.com/single-signin-ui/0.557.0/build/7b4c51f66559b768081eabf61db98f2d.svg" type = "image/x-icon">
+    <link rel="stylesheet" href="login.css">
+</head>
+<style>
+    
+</style>
+<body>
+    <form>
+        
+        <input type="text" id="username" placeholder="Enter Your Username">
+        <input type="text" id="password" placeholder="Enter Your Password">
+    </form>
+    <button>Login</button>
+
+
+
+
+
+
+
+</body>
+</html>
+<script>
+    document.querySelector("button").addEventListener("click", login);
+
+
+async function login(){
+    
+    let ldata={
+        password:document.querySelector("#password").value,
+        username:document.querySelector("#username").value,
+    };
+    
+    ldata=JSON.stringify(ldata);
+
+    console.log(ldata);
+
+    let url=`https://masai-api-mocker.herokuapp.com/auth/login`;
+
+    let res=await fetch (url,{
+        method:"POST",
+
+        body:ldata,
+
+        headers:{
+            "Content-Type":"application/json",
+        },
+    });
+
+    let data= await res.json();
+
+    console.log(data);
+
+    let username=document.querySelector("#username").value;
+
+
+    getProfile(username,data.token);
+
+}
+
+async function getProfile(username,token){
+
+    let api=`https://masai-api-mocker.herokuapp.com/user/${username}`;
+
+    let res= await fetch(api,{
+        headers:{
+            "Content-Type":"application/json",
+
+            Authorization: `Bearer ${token}`,
+        },
+    })
+
+    let data=await res.json();
+
+    console.log(data);
+
+
+
+
+
+
+}
+
+
+
+
+</script>

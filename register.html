@@ -52,6 +52,7 @@
         color:red;
         line-height:0px;
         margin-top:0px;
+        font-size:12px;
     }
 </style>
 <body>
@@ -106,7 +107,11 @@
     document.querySelector("button").addEventListener("click", register);
 
 
-    async function register(){
+    function register(){
+        let nt=true;
+        let pt=true;
+        let ut=true;
+        let mt=true;
 
         let name=document.querySelector("#zip").value;
         let password=document.querySelector("#password").value;
@@ -117,18 +122,25 @@
         let cbx2=document.querySelector("#cbx2").value;
 
         if(name.length<5){
-            document.querySelector("#izip").textContent="Please enter a valid 5-digit ZIP Code."
+            document.querySelector("#izip").textContent="Please enter a valid 5-digit ZIP Code.";
+            nt=false;
         }
         if(password.length<9){
             document.querySelector("#ipass").textContent="Please add a password.";
+            pt=false;
         }
         if(mobile.length<10){
             document.querySelector("#imob").textContent="Phone numbers must be 10 digits.";
+            mt=false;
         }
         if(username.length<1){
             document.querySelector("#iemail").textContent="Please provide your email address.";
+            ut=false;
         }
-        
+
+
+
+
         let rdata={
             name:name,
             email:" ",
@@ -138,35 +150,36 @@
             description:" "
         };
 
+
+        if(ut==true && pt==true &&  nt==true && mt==true){
+            fefun(rdata)
+        }
         
-        
-        // rdata=JSON.stringify(rdata);
+    }
 
-        // console.log(rdata);
+    async function fefun(rdata){
+        rdata=JSON.stringify(rdata);
 
-        // let url=`https://masai-api-mocker.herokuapp.com/auth/register`;
+        console.log(rdata);
 
-        // let res=await fetch (url,{
-        //     method:"POST",
+        let url=`https://masai-api-mocker.herokuapp.com/auth/register`;
 
-        //     body:rdata,
+        let res=await fetch (url,{
+            method:"POST",
 
-        //     headers:{
-        //         "Content-Type":"application/json",
-        //     },
-        // });
+            body:rdata,
 
-        // let data= await res.json();
+            headers:{
+                "Content-Type":"application/json",
+            },
+        });
 
-        // console.log(data);
+        let data= await res.json();
 
-
-
-
-
-
-
-
+        console.log(data.message);
+        if(data.message=="Registration failed, user already exists"){
+            alert("Registration failed, user already exists")
+        }
     }
 
 

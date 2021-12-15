@@ -1,0 +1,286 @@
+/* Recently Viewed Items */
+/* ------START------- */
+#recent {
+  border: 1px solid transparent;
+  height: 43px;
+  margin-top: 50px;
+  border-bottom: 1px solid #999999;
+}
+#recent-1 {
+  border: 1px solid transparent;
+  width: 40%;
+  height: 43px;
+}
+#recent-1 p {
+  font-size: 36px;
+  margin-top: 0%;
+  color: #333333;
+  word-spacing: 0%;
+  border-bottom: 4px solid #f96302;
+  font-weight: lighter;
+}
+#recent-box {
+  border: 1px solid transparent;
+  height: 380px;
+  margin-top: 1%;
+}
+#r-container {
+  border: 1px solid transparent;
+  height: 100%;
+  width: 28%;
+}
+.r-image {
+  border: 1px solid transparent;
+  width: 43%;
+  height: 170px;
+  margin-left: 15%;
+  margin-top: 15%;
+}
+.r-text {
+  border: 1px solid transparent;
+  width: 45%;
+  height: 65px;
+  margin-left: 15%;
+  /* font-size: 15px; */
+}
+.r-text p {
+  font-size: 16px;
+  margin-top: 0px;
+  color: #574f4b;
+}
+.r-icon {
+  display: flex;
+  border: 1px solid transparent;
+  width: 50%;
+  height: 40px;
+  margin-left: 15%;
+}
+.r-icon p {
+  font-size: 21px;
+  margin-top: -3px;
+}
+/* Special buy Container */
+/* ------START------ */
+#special-buy-container {
+  border: 1px solid transparent;
+  height: 250px;
+  margin-top: 80px;
+  border-bottom: 2px solid #cccccc;
+  border-top: 2px solid #cccccc;
+}
+#special-buy-upper {
+  display: flex;
+  border: 1px solid transparent;
+  height: 47%;
+  margin-top: 0.3%;
+}
+#special-buy-lower {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  height: 47%;
+  margin-top: 0.3%;
+}
+#special-buy-lower div {
+  border: 1px solid transparent;
+  width: 9%;
+  height: 96%;
+  cursor: pointer;
+}
+.special-buy-upper-1 {
+  border: 1px solid transparent;
+  width: 7%;
+  height: 96%;
+  cursor: pointer;
+}
+.special-buy-upper-2 {
+  border: 1px solid transparent;
+  width: 67%;
+  height: 96%;
+  margin-left: 1%;
+}
+.special-buy-upper-2 h1 {
+  margin-top: 0%;
+  font-size: 30px;
+  color: #333333;
+  font-weight: 950;
+  cursor: pointer;
+  text-decoration: none solid rgb(51, 51, 51);
+}
+.special-buy-upper-2 p {
+  line-height: 0%;
+  font-size: 18px;
+  padding-top: 0%;
+  cursor: pointer;
+}
+.special-buy-upper-3 {
+  border: 1px solid transparent;
+  width: 23%;
+  height: 96%;
+  margin-left: 1%;
+}
+.special-buy-upper-3 button {
+  width: 99%;
+  height: 36%;
+  margin: 15% 0% 0% 1%;
+  background-color: #f96302;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+/* Heading-Last Minute Holiday Preperation */
+/* ------START------- */
+#head-last-minute-holiday-prep {
+  border: 1px solid transparent;
+  height: 43px;
+  margin-top: 50px;
+  border-bottom: 1px solid #999999;
+}
+#inside-last-minute {
+  border: 1px solid transparent;
+  width: 40%;
+  height: 43px;
+}
+#inside-last-minute p {
+  font-size: 36px;
+  margin-top: 0%;
+  color: #333333;
+  word-spacing: 0%;
+  border-bottom: 4px solid #f96302;
+  font-weight: lighter;
+}
+/* Container-Last minute holiday preperation  */
+
+#container-last-minute-holiday-prep {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid transparent;
+  height: 448px;
+  margin-top: 25px;
+}
+.box-last-minute {
+  border: 1px solid transparent;
+  height: 96%;
+  width: 23%;
+  margin: 0.6% 0% 1% 0.3%;
+}
+.image-last-minute {
+  border: 1px solid transparent;
+  height: 65%;
+  width: 97%;
+  margin: 1%;
+  cursor: pointer;
+}
+.subhead-last-minute {
+  border: 1px solid transparent;
+  height: 16%;
+  width: 97%;
+  /* margin-top: 2%; */
+  margin: 1% 1% 0% 1%;
+}
+.subhead-last-minute h1 {
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 0%;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.subhead-last-minute h1:hover {
+  text-decoration: underline;
+}
+.text-last-minute {
+  border: 1px solid transparent;
+  height: 16%;
+  width: 97%;
+  margin: 0% 1% 0% 1%;
+  padding-bottom: 0%;
+}
+.text-last-minute p {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0%;
+}
+.text-last-minute p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* Shop by Category */
+/* --------START--------- */
+#head-shop-by-category {
+  border: 1px solid transparent;
+  height: 43px;
+  margin-top: 50px;
+  border-bottom: 1px solid #999999;
+}
+#inside-shop-by-category {
+  border: 1px solid transparent;
+  width: 40%;
+  height: 43px;
+}
+#inside-shop-by-category p {
+  font-size: 36px;
+  margin-top: 0%;
+  color: #333333;
+  word-spacing: 0%;
+  border-bottom: 4px solid #f96302;
+  font-weight: lighter;
+}
+
+/* CONTENT of Shop by Category */
+#container-shop-by-category {
+  border: 1px solid transparent;
+  height: 375px;
+  margin-top: 25px;
+}
+.container-1-shop-by-category {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid transparent;
+  height: 32%;
+}
+.shop1 {
+  margin-top: 0.5%;
+}
+.container-1-shop-by-category div {
+  border: 1px solid transparent;
+  height: 60%;
+  width: 15%;
+  margin-top: 1%;
+  cursor: pointer;
+}
+/* Find an expert-> whole image div */
+/* ----START----- */
+#find-an-expert-image {
+  border: 1px solid transparent;
+  height: 132px;
+  cursor: pointer;
+}
+/* ----END----- */
+/* Container Save time with home depot Image */
+/* ----START----- */
+#container-save-time-with-home {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  height: 278px;
+  margin-top: 25px;
+}
+#container-save-time-with-home div {
+  border: 1px solid transparent;
+  width: 23.5%;
+  height: 96%;
+  margin: 0.3%;
+  cursor: pointer;
+}
+/* ----END----- */
+/* 6 Months everyday financing-> whole image div */
+/* ----START----- */
+#everyday-finance-image {
+  border: 1px solid transparent;
+  height: 162px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+/* ----END----- */

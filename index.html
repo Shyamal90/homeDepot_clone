@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homedepot.com</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/carousel.css">
 </head>
 <body>
     <div class="container">
@@ -179,51 +180,211 @@
 
         <!-- Banner Section -->
         <div class="bannerSection">
-
-            <div class="carousel_container">
-                <div class="img_container">
-                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/20211202-ContentHub.jpg" alt="bannerImg">
+            <div class="carousel">
+                <div class="carousel__item carousel__item--visible">
+                  <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/20211202-ContentHub.jpg" />
                 </div>
-    
-                <div class="img_container">
-                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/20211202-Appliances3.jpg" alt="bannerImg">
+                <div class="carousel__item">
+                  <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/20211202-Appliances3.jpg" />
                 </div>
-    
-                <div class="img_container">
-                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/20211202-Tools-5.jpg" alt="bannerImg">
+                <div class="carousel__item">
+                  <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/20211202-Tools-5.jpg" />
                 </div>
-    
-                <div class="img_container">
-                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/20211202-Foundation-2.jpg" alt="bannerImg">
+          
+                <div class="carousel__actions">
+                  <button id="carousel__button--prev" aria-label="Previous slide"><img src="./image/leftArrow.svg" alt=""></button>
+                  <button id="carousel__button--next" aria-label="Next slide"><img src="./image/rightArrow.svg" alt=""></button>
                 </div>
-
-                <button id="leftArrow" class="arrow"><img src="./image/leftArrow.svg" alt=""></button>
-                <button id="rightArrow" class="arrow"><img src="./image/rightArrow.svg" alt=""></button>
-            </div>
-
-            
-            
+              </div>
         </div>
 
         <!-- Offer Section -->
-        <div class="offerSection"></div>
+        <div class="offerSection">
+            <div class="box1">
+                <div class="offerHeading">
+                    <div class="imgBox">
+                        <img src="https://www.homedepot.com/SpecialBuy/images/Logo-SBOTD.svg" alt="">
+                    </div>
+                    <div class="offerHeadline">
+                        <h1>Up to $80 off Select Smart Home , Solar , and Lighting</h1>
+                        <p>Free Delivery. <h5>Today Only</h5></p>
+                    </div>
+                </div>
+                <div class="shopBtn">
+                    <button id="specialOfferBtn">Shop Today's Specials</button>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="itemBox">
+                    <img src="https://images.thdstatic.com/productImages/51fd36ee-72e7-4e1d-bc93-595452ec4a58/svn/chalk-google-doorbell-cameras-ga03698-64_145.jpg" alt="">
+                </div>
+                <div class="itemBox">
+                    <img src="https://images.thdstatic.com/productImages/e058bab6-8500-4613-ab87-b341f7fe259e/svn/white-ring-alarm-systems-4k18sz-0en0-64_145.jpg" alt="">
+                </div>
+                <div class="itemBox">
+                    <img src="https://images.thdstatic.com/productImages/1e712008-1840-4c7d-bf73-036c213db899/svn/sand-google-smart-routers-ga01425-us-64_145.jpg" alt="">
+                </div>
+                <div class="itemBox">
+                    <img src="https://images.thdstatic.com/productImages/f07244c3-6f1d-4e35-9449-32a60c4eacb7/svn/black-defender-wireless-security-camera-systems-phoenixm22c-64_145.jpg" alt="">
+                </div>
+                <div class="itemBox">
+                    <img src="https://images.thdstatic.com/productImages/8b8a568b-80cc-4f71-80eb-f46eea6ec803/svn/chalk-google-smart-speakers-and-displays-vbce2ck20-64_145.jpg" alt="">
+                </div>
+                <div class="itemBox">
+                    <img src="https://images.thdstatic.com/productImages/f7a90a81-ffce-429c-b38d-75b063bdef2f/svn/black-white-google-doorbell-cameras-nc5100us-64_145.jpg" alt="">
+                </div>
+                <div class="itemBox">
+                    <img src="https://images.thdstatic.com/productImages/673f68c4-ad60-4cf7-8dbe-718439c0dbfb/svn/white-body-temperature-monitoring-device-tcs-3221-w-64_145.jpg" alt="">
+                </div>
+                <div class="itemBox">
+                    <img src="https://images.thdstatic.com/productImages/9f8ebc3a-6fc6-4d71-88dd-e5e5c3054078/svn/satin-nickel-ring-doorbell-cameras-8vrslz-0en0-64_145.jpg" alt="">
+                </div>
+                <div class="itemBox">
+                    <img src="https://images.thdstatic.com/productImages/3d6b68c2-e448-440f-93fd-5ffd01e315e4/svn/satin-nickel-ring-doorbell-cameras-b08m125rnw-64_145.jpg" alt="">
+                </div>
+            </div>
+        </div>
 
         <!-- holiday section -->
-        <div class="holidaySection"></div>
+        <div class="holidaySection">
+            <div class="box1">
+                <h1>Last-Minute Holiday Prep </h1>
+            </div>
+            <div class="box2">
+                <div class="itemBox">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/20211202Holiday-2.jpg" alt="">
+                    <h1>FREE HOLIDAY DECOR PICKUP</h1>
+                    <p>Online Orders Filled Fast at Any Store</p>
+                </div>
+
+                <div class="itemBox">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/20211202HP-Heating.jpg" alt="">
+                    <h1>WARM UP & STAY COZY</h1>
+                    <p>With Heaters Delivered Fast</p>
+                </div>
+
+                <div class="itemBox">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/20211209Decor.jpg" alt="">
+                    <h1>ENTERTAINING & CELEBRATING</h1>
+                    <p>Must-Haves for You & Guests</p>
+                </div>
+
+                <div class="itemBox">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/20211202Bath.jpg" alt="">
+                    <h1>STYLISH BATH UPDATES</h1>
+                    <p>With Big Impact</p>
+                </div>
+            </div>
+        </div>
 
 
         <!-- Category Section -->
-        <div class="category"></div>
+        <div class="category">
+            <div class="category_heading">
+                <h1>Shop by Category</h1>
+            </div>
+            <div class="categoryOptions">
+
+                <div class="categoryItem">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/Cat1-Appliances.png" alt="">
+                </div>
+
+                <div class="categoryItem">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/Cat2-Bath.png" alt="">
+                </div>
+                <div class="categoryItem">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/Cat3-Blinds.png" alt="">
+                </div>
+
+                <div class="categoryItem">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/Cat4-Building.png" alt="">
+                </div>
+
+                <div class="categoryItem">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/Cat5-Decor.png" alt="">
+                </div>
+
+                <div class="categoryItem">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/Cat6-Doors.png" alt="">
+                </div>
+
+                <div class="categoryItem">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/Cat7-Electrical.png" alt="">
+                </div>
+
+                <div class="categoryItem">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/Cat8-Flooring.png" alt="">
+                </div>
+
+                <div class="categoryItem">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/Cat9-Hardware.png" alt="">
+                </div>
+
+                <div class="categoryItem">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/Cat10-Hvac.png" alt="">
+                </div>
+
+                <div class="categoryItem">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/Cat11-Kitchen.png" alt="">
+                </div>
+
+                <div class="categoryItem">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/Cat12-LawnGarden.png" alt="">
+                </div>
+
+                <div class="categoryItem">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/Cat13-Lighting.png" alt="">
+                </div>
+
+                <div class="categoryItem">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/Cat14-OutdoorLiving.png" alt="">
+                </div>
+
+                <div class="categoryItem">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/Cat15-Paint.png" alt="">
+                </div>
+
+                <div class="categoryItem">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/Cat16-Plumbing.png" alt="">
+                </div>
+
+                <div class="categoryItem">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/Cat17-StorageOrg.png" alt="">
+                </div>
+
+                <div class="categoryItem">
+                    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/Cat18-Tools.png" alt="">
+                </div>
+
+            </div>
+        </div>
 
         <!-- help banner section -->
-        <div class="helpBanner"></div>
+        <div class="helpBanner">
+                <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/20210304HPHomeServicesD.png" alt="">
+        </div>
 
         <!-- helping section -->
-        <div class="helping"></div>
+        <div class="helping">
+            <div class="helpingBox">
+                <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/2021DAppCapabilities5.png" alt="">
+            </div>
+            <div class="helpingBox">
+                <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/2021RentalCapabilities5.png" alt="">
+            </div>
+            <div class="helpingBox">
+                <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/2021CUrbsideCapabilities5.png" alt="">
+            </div>
+            <div class="helpingBox">
+                <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/2021DeliveryCapabilities5.png" alt="">
+            </div>
+        </div>
 
 
         <!-- Financining Banner -->
-        <div class="financingBanner"></div>
+        <div class="financingBanner">
+            <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/NexGen/ContentPage/20210913HPCreditOfferD.png" alt="">
+        </div>
 
         <!-- Change location -->
         <div class="changeLocation"></div>
@@ -258,4 +419,7 @@
 <script src="./Script/delivery.js"></script>
 <script src="./Script/profile.js"></script>
 <script src="./Script/allDepartment.js"></script>
+
+
+
 <script src="./Script/carousel.js"></script>

@@ -1,10 +1,10 @@
- flag = true;
+let flaag = true;
 document.querySelector("#myAccount").addEventListener("click",()=>{
-    if(flag === true){
+    if(flaag === true){
         document.querySelector(".registerform").style.display = "block";
-        flag = false;
+        flaag = false;
     }else{
         document.querySelector(".registerform").style.display = "none";
-        flag = true;
+        flaag = true;
     }
 })

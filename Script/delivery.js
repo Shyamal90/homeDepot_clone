@@ -1,10 +1,10 @@
-flag = true;
+let fllag = true;
 document.querySelector(".deliveryBtn").addEventListener("click",()=>{
-    if(flag === true){
+    if(fllag === true){
         document.querySelector(".deliveryResult").style.display = "block";
-        flag = false;
+        fllag = false;
     }else{
         document.querySelector(".deliveryResult").style.display = "none";
-        flag = true;
+        fllag = true;
     }
 })

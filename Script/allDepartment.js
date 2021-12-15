@@ -1,10 +1,10 @@
-flag = true;
+let flagg = true;
 document.querySelector("#allDepartment").addEventListener("click",()=>{
-    if(flag === true){
+    if(flagg === true){
         document.querySelector(".allDepartment_list").style.display = "block";
-        flag = false;
+        flagg = false;
     }else{
         document.querySelector(".allDepartment_list").style.display = "none";
-        flag = true;
+        flagg = true;
     }
 })

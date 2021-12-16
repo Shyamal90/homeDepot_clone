@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homedepot.com</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/productDetails.css">
+    <link rel="stylesheet" href="../style/footer.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Heading  -->
+        <div class="heading">
+            <p id="retainerHeading">#1 Home Improvement Retailer</p>
+        </div>
+
+
+        <!-- Extra Options -->
+        <div class="extraOptions">
+               <ul>
+                   <li> <a href="#">Store Finder</a></li>
+                   <li> <a href="#">Truck & Tool Rental</a></li>
+                   <li> <a href="#">For the Pro</a></li>
+                   <li> <a href="#">Gigt Cards</a></li>
+                   <li> <a href="#">Credit Services</a></li>
+                   <li> <a href="#">Track Order</a></li>
+                   <li> <a href="#">Help</a></li>
+               </ul> 
+        </div>
+
+        <!-- navbar  -->
+        <nav class="navbar"></nav>
+
+        <!-- show product details -->
+        <div class="productDetails">
+            <div class="imageBox">
+                <img src="https://images.thdstatic.com/productImages/ed4c32fa-4026-4886-b3a8-1e33c6ed6867/svn/lucid-comfort-collection-mattresses-lucc10qq30gf-64_300.jpg" alt="">
+            </div>
+
+            <div class="details">
+                <p>Price - $123</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+
+        </footer>
+    </div>
+</body>
+</html>
+
+<!-- javaScript link -->
+
+
+<script type="module">
+    import navbar from "../Component/navbar.js";
+    import footer from "../Component/footer.js";
+
+    let flag;
+    console.log(navbar);
+    document.querySelector(".navbar").innerHTML = navbar(flag);
+
+    // footer
+    document.querySelector(".footer").innerHTML = footer();
+</script>
+
+<script src="../Script/currentLocation.js" type="module"></script>
+<script src="../Script/delivery.js" type="module"></script>
+<script src="../Script/profile.js" type="module"></script>
+<script src="../Script/allDepartment.js" type="module"></script>

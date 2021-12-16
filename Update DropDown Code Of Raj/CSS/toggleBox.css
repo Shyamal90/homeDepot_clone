@@ -1,0 +1,29 @@
+.departmentContent{
+    display: none;
+}
+
+.departmentContent h4{
+    color: gray;
+    margin-left: 20px;
+}
+
+#arrow3{
+    /* width: 80px; */
+    transform: rotate(-270deg);
+}
+
+.arrowBtn{
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.priceArrowBtn{
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.priceCatelogy{
+    display: none;
+}

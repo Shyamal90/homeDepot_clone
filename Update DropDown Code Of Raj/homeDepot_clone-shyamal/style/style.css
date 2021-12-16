@@ -1,0 +1,407 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /* background-color: rebeccapurple; */
+}
+
+/* container */
+
+.container {
+  border: 1px solid black;
+}
+
+/* heading */
+
+.heading {
+  border: 1px solid brown;
+  height: 30px;
+  text-align: center;
+  background-color: orange;
+}
+
+/* extraOptions */
+
+.extraOptions {
+  border: 1px solid red;
+  height: 30px;
+}
+
+.extraOptions ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.extraOptions ul li {
+  margin: 0px 10px;
+  list-style: none;
+}
+
+.extraOptions ul li a {
+  text-decoration: none;
+}
+
+/* Navbar */
+
+.navbar {
+  border: 1px solid green;
+  height: 80px;
+}
+
+.navbar_container {
+  border: 1px solid green;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+}
+
+.locationTracker {
+  border: 1px solid brown;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 20%;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.currnetLocation {
+  cursor: pointer;
+}
+
+.currentLocationBtn {
+  position: relative;
+}
+
+.findLocationResult {
+  border: 1px solid black;
+  display: none;
+  position: absolute;
+  max-width: 320px;
+  z-index: 2;
+}
+
+.findLocationResult .box2 {
+  display: flex;
+  width: 50%;
+}
+
+.findLocationResult .box2 .rightBox img {
+  width: 400%;
+  height: 100%;
+  object-fit: contain;
+}
+.vertical {
+  height: 70%;
+  border: 1px solid black;
+}
+
+.deliveryBtn {
+  cursor: pointer;
+  position: relative;
+}
+
+.deliveryResult {
+  position: absolute;
+  border: 1px solid black;
+  max-width: 300px;
+  display: none;
+  z-index: 2;
+}
+
+.searchbox {
+  border: 1px solid tomato;
+  /* display: flex; */
+}
+
+.searchbox button {
+  border: none;
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 5px;
+  background-color: tomato;
+  margin-left: 0px;
+}
+
+#searchfield {
+  font-size: 18px;
+  padding: 8px;
+  width: 80%;
+  border-left: 1px solid rgb(214, 54, 54);
+  border-top: 1px solid rgb(218, 60, 60);
+  border-bottom: 1px solid rgb(212, 77, 77);
+  border-right: none;
+  margin-right: 0px;
+}
+
+.profileSection {
+  border: 1px solid orange;
+}
+
+.profileSection ul {
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+
+.profileSection ul li {
+  list-style: none;
+  margin-left: 15px;
+}
+
+.profileSection ul li a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#myAccount {
+  position: relative;
+}
+
+.registerform {
+  border: 1px solid black;
+  width: 300px;
+  position: absolute;
+  display: none;
+  z-index: 2;
+}
+
+.registrationBtn {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+.registrationBtn button {
+  margin-bottom: 10px;
+  width: 280px;
+  padding: 5px;
+}
+
+.otherSections ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.otherSections ul li {
+  margin-bottom: 10px;
+}
+
+.nav_catagory ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#allDepartment {
+  position: relative;
+}
+
+.registrationBtn {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+.allDepartment {
+  position: relative;
+}
+
+.allDepartment_list {
+  display: none;
+  max-width: 400px;
+}
+
+.allDepartment_list ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border: 1px solid black;
+}
+
+.allDepartment_list ul li {
+  list-style: none;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+/* Banner Section */
+
+.bannerSection {
+  border: 1px solid black;
+  /* height: 600px; */
+  margin: 50px auto;
+  width: 1440px;
+  position: relative;
+}
+
+/* .img_container{
+    width: 100%;
+}
+
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    padding: 15px;
+    height: 100px;
+} */
+/* 
+#rightArrow{
+    right: 220px;
+}
+
+#leftArrow{
+    left: 220px;
+} */
+
+/* Offer Section */
+.offerSection {
+  border: 1px solid green;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.offerSection .box1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.offerSection .box1 .imgBox {
+  cursor: pointer;
+}
+
+.offerSection .box1 .offerHeadline {
+  cursor: pointer;
+}
+
+.offerSection .box1 .shopBtn,
+.shopBtn #specialOfferBtn {
+  cursor: pointer;
+}
+
+.offerHeading {
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.offerSection .box2 {
+  display: flex;
+  justify-content: center;
+}
+
+.offerSection .box2 .itemBox {
+  cursor: pointer;
+}
+
+/* holiday section */
+.holidaySection {
+  border: 1px solid blueviolet;
+  height: 600px;
+}
+
+.holidaySection > div {
+  border: 1px solid black;
+}
+
+.holidaySection .box2 {
+  display: flex;
+}
+
+.holidaySection .box2 .itemBox {
+  height: 500px;
+  margin: 5px 10px;
+  width: 25%;
+}
+
+.holidaySection .box2 .itemBox img {
+  width: 100%;
+}
+
+/* Category Section */
+.category {
+  border: 1px solid blueviolet;
+  height: 500px;
+}
+
+.categoryOptions {
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% 15% 15%;
+  justify-content: center;
+}
+
+.categoryOptions .categoryItem {
+  cursor: pointer;
+}
+
+/* help banner section */
+.helpBanner {
+  border: 1px solid hotpink;
+  height: 240px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* helping section */
+.helping {
+  border: 1px solid brown;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Financining Banner */
+.financingBanner {
+  border: 1px solid brown;
+  height: 200px;
+  text-align: center;
+}
+
+/* Change location */
+
+.changeLocation {
+  border: 1px solid red;
+  height: 400px;
+}
+
+/* Sponsored Product section */
+.sponsoredSection {
+  border: 1px solid violet;
+  height: 550px;
+}
+
+/* Top Category section */
+.topCategory {
+  border: 1px solid black;
+  height: 400px;
+}
+
+/* popular categories */
+.popularCategories {
+  border: 1px solid orange;
+  height: 200px;
+}
+
+/* index section */
+.index {
+  border: 1px solid tan;
+  height: 580px;
+}
+
+/* Brand Section */
+.brandSection {
+  border: 1px solid hotpink;
+  height: 300px;
+}
+
+/* Footer Section  */
+.footerSection {
+  border: 1px solid saddlebrown;
+  height: 100px;
+}

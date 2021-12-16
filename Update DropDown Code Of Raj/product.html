@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/toggleBox.css">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <script src="./js/index.js"></script>
+</head>
+<style>
+   
+  
+</style>
+<body>
+   <!-- <h1>Home Depot Product Page</h1>
+<input type="text" id="search" placeholder="Enter product"> -->
+
+<div id="navDiv">
+    <!-- navbar location div -->
+        <li>Home </li>
+         <span>/</span>
+        <li>Furniture </li>
+       <span>/</span>
+        <li>Living Room Furniture </li>
+        <span>/</span>
+        <li>Chairs</li>
+        
+</div>
+<div id="slider">
+    <img src="https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/fetch/bopis-desktop.jpg">
+</div>
+
+   <!-- category div -->
+<div id="category">
+    <h1>Chairs</h1>
+</div>
+
+
+
+<div id="display_images">
+    <div id="mainDiv">
+        
+         <div id="imgDiv">
+        <img src="https://images.thdstatic.com/catalog/productImages/300/db/db7c2848-d0b4-454b-8a53-ad8170baf14a_300.jpg">
+     <p>Massage Chairs</p>    
+    </div>
+   
+      
+           <div id="imgDiv">
+        <img src="https://images.thdstatic.com/catalog/productImages/300/05/05b55d9d-1d7d-455e-b32c-70b49c32488d_300.jpg">
+      <p>Accent Chairs</p>    
+    </div>
+       
+        
+      
+         <div id="imgDiv">
+        <img src="https://images.thdstatic.com/catalog/productImages/300/ef/ef6740ff-f9a6-4ebb-a1fa-a01e1e7a798f_300.jpg">
+    <p>Recliners</p>    
+    </div>
+        
+         <div id="imgDiv">
+        <img src="https://images.thdstatic.com/catalog/productImages/300/6a/6acaf156-6d9b-498c-ad35-21438953f6fd_300.jpg">
+    <p>Bean Bag Chairs</p>    
+    </div>
+        
+         <div id="imgDiv">
+        <img src="https://images.thdstatic.com/catalog/productImages/300/f3/f37f174f-9d5f-4f6c-9837-d21218b80d7c_300.jpg">
+    <p>Chaise Lounges</p>    
+    </div>
+        
+        <div id="imgDiv">
+        <img src="https://assets.thdstatic.com/images/special-buy--pod.jpg">
+        <p>Shop Savings</p>
+        </div>  
+    </div>
+</div>
+
+<div id="results_sort">
+  
+    <div id="results">
+
+    </div>
+
+    <div id="drop-down">
+
+<div id="sortby">
+    
+    <p>Sort by:</p>
+ <p id="top_sellers">Top Sellers</p>
+      <!-- <div id="sort_arrow"> -->
+   <img src="https://assets.thdstatic.com/images/v1/caret-orange.svg">
+ <!-- </div> -->
+ 
+  <div id="dropdown-content">
+
+      <div><a href="#">Top Sellers</a></div>
+      <div><a href="#">Most Popular</a></div>
+      <div><a href="#">Price Low to High</a></div>
+      <div><a href="#">Price High to Low</a></div>
+      <div><a href="#">Top Rated Products</a></div>
+  </div>
+ 
+  
+ </div>
+
+    </div>
+
+ 
+  
+    </div>
+  
+
+
+
+<div id="flex">
+  <div id="left_menu">
+<div id="get_fast">
+    <div id="content">
+      <h3>Get It Fast</h3>
+    </div>
+    
+    <div id="arrow">
+      <img  src="https://assets.thdstatic.com/images/v1/caret-grey.svg">
+    </div>
+    
+   </div>
+   <div id="get_fast">
+       <div id="content">
+        <h3>Availability</h3>
+       </div>
+    
+    <img id="arrow" src="https://assets.thdstatic.com/images/v1/caret-grey.svg">
+   </div>
+    <div id="get_fast">
+        <div id="content">
+          <h3>Department <span><button class="arrowBtn" onclick="showContent()"><i class="fas fa-chevron-down"></i>
+          </button></span></h3>
+          <div class="departmentContent">
+              <h4>Furniture</h4>
+              <h4>Chair</h4>
+              <h4>Bags</h4>
+          </div>
+        </div>
+    
+    
+   </div>
+    <div id="get_fast">
+        <div id="content">
+           <h3>Brand</h3>
+        </div>
+    
+    <img id="arrow" src="https://assets.thdstatic.com/images/v1/caret-grey.svg">
+   </div>
+    <div id="get_fast">
+   <div id="content">
+       <h3>Price<span><button class="priceArrowBtn" onclick="showPriceContent()"><i class="fas fa-chevron-down"></i>
+       </button></span></h3>
+       <div class="priceCatelogy">
+           <ul>
+               <li><input type="checkbox" id=""> $20 -  $30(8)   </li>
+               <li><input type="checkbox" id=""> $30 -  $40(13)  </li>
+               <li><input type="checkbox" id=""> $40 -  $50(19)  </li>
+               <li><input type="checkbox" id=""> $50 -  $100(151)</li>
+               <li><input type="checkbox" id=""> $100 - $150(423)</li>
+           </ul>
+       </div>
+   </div>
+    
+   </div>
+    <div id="get_fast">
+        <div id="content">
+          <h3>Style</h3>
+        </div>
+    
+    <img id="arrow" src="https://assets.thdstatic.com/images/v1/caret-grey.svg">
+   </div>
+    <div id="get_fast">
+        <div id="content">
+       <h3>Review Rating</h3>
+        </div>
+    
+    <img id="arrow" src="https://assets.thdstatic.com/images/v1/caret-grey.svg">
+   </div>
+    <div id="get_fast">
+        <div id="content">
+             <h3>Product Width (in.)</h3>
+        </div>
+  
+    <img id="arrow" src="https://assets.thdstatic.com/images/v1/caret-grey.svg">
+   </div>
+    <div id="get_fast">
+        <div id="content">
+         <h3>Savings Center</h3>
+        </div>
+    
+    <img id="arrow" src="https://assets.thdstatic.com/images/v1/caret-grey.svg">
+   </div>
+    <div id="get_fast">
+        <div id="content">
+         <h3>Product Depth (in.)</h3>
+        </div>
+    
+    <img id="arrow" src="https://assets.thdstatic.com/images/v1/caret-grey.svg">
+   </div>
+    <div id="get_fast">
+        <div id="content">
+           <h3>New Arrival</h3>
+        </div>
+   
+    <img id="arrow" src="https://assets.thdstatic.com/images/v1/caret-grey.svg">
+   </div>
+    <div id="get_fast">
+        <div id="content">
+          <h3>Saving by Percentage Off</h3>
+        </div>
+    
+    <img id="arrow" src="https://assets.thdstatic.com/images/v1/caret-grey.svg">
+   </div>
+    <div id="get_fast">
+        <div id="content">
+          <h3>Frame Material</h3>
+        </div>
+    
+    <img id="arrow" src="https://assets.thdstatic.com/images/v1/caret-grey.svg">
+   </div>
+    <div id="get_fast">
+        <div id="content">
+          <h3>Product Height (in.)</h3>
+        </div>
+    
+    <img id="arrow" src="https://assets.thdstatic.com/images/v1/caret-grey.svg">
+   </div>
+    <div id="get_fast">
+        <div id="content">
+         <h3>Color Family</h3>
+        </div>
+    
+    <img id="arrow" src="https://assets.thdstatic.com/images/v1/caret-grey.svg">
+   </div>
+    <div id="get_fast">
+        <div id="content">
+             <h3>The Home Depot Events</h3>
+        </div>
+  
+    <img id="arrow" src="https://assets.thdstatic.com/images/v1/caret-grey.svg">
+   </div>
+    <div id="get_fast">
+        <div id="content">
+          <h3>Upholstery Material</h3>
+        </div>
+   
+    <img id="arrow" src="https://assets.thdstatic.com/images/v1/caret-grey.svg">
+   </div>
+</div>
+
+<div id="products">
+
+</div>
+
+<div id="feedback">
+    <img src="https://sjc1.qualtrics.com/WRQualtricsSiteIntercept/Graphic.php?IM=IM_cUuBXdlHtK4XTdr">
+</div>
+
+</div>
+
+ <!-- top up button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+</body>
+</html>
+
+<script>
+//sergAPI
+//  var input=document.getElementById("search")
+ 
+//  input.addEventListener("keypress",home)
+
+
+//    async function  home(e){
+//        var searchvalue=input.value;
+//        if(e.key=="Enter"){
+//          let response=await fetch(`https://serpapi.com/search.json?engine=home_depot&q=${searchvalue}&api_key=dcd67b496e3618a1693a50a933bd6a097dbfdb0c32543c24a48535e06a7965b1`)
+
+//     let data=await response.json()
+//     console.log('data:', data)
+//     localStorage.setItem("home_depotdata",JSON.stringify(data))
+//        }
+     
+        
+    
+
+//    }
+    
+//    let depotdata=JSON.parse(localStorage.getItem("home_depotdata"))
+//    console.log('depotdata:', depotdata)
+
+//    let totalResults=depotdata.search_information.total_results
+
+ 
+// let resultsDiv=document.getElementById("results")
+// let total=document.createElement("h3")
+// let results=document.createElement("h3")
+// results.innerText=`Results`;
+// total.innerText=totalResults 
+// resultsDiv.append(total,results)
+
+
+// let products=depotdata.products;
+// console.log('products:', products)
+// display(products)
+
+// function display(products){
+//     products.map((el)=>{
+//      let title=el.title;
+    
+
+
+//     })
+// }
+
+
+
+
+      //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+}
+
+product()
+async function product(){
+let url=`http://127.0.0.1:5000/api/products`
+
+   let response = await fetch(url,{
+        method : "GET",
+       
+        headers:{
+            "Content-Type": "application/json"
+        }
+    });
+
+        let data = await response.json();
+    console.log(data);
+  
+    display(data)
+  
+}
+var body=document.querySelector("body")
+    function display(data){
+        data.map((el)=>{
+            let img=document.createElement("img")
+            img.src=el.productImg
+            body.append(img)
+        })
+    }  
+</script>

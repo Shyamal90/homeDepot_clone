@@ -3,7 +3,7 @@ function navbar(){
     <div class="locationTracker">
 
         <div class="logo">
-            <img src="https://1000logos.net/wp-content/uploads/2017/02/Home-Depot-Logo.png" alt="logo">
+           <a href="../index.html"><img src="https://1000logos.net/wp-content/uploads/2017/02/Home-Depot-Logo.png" alt="logo"></a>
         </div>
 
         <div class="currnetLocation">
@@ -100,7 +100,7 @@ function navbar(){
                     </div>
                 </div>
             </li>
-            <li><a href="#">Lists <img src="../image/heart.svg" alt="logo"> </a></li>
+            <li><a href="list.html">Lists <img src="../image/heart.svg" alt="logo"> </a></li>
             <li><a href="#">Cart <span>|6 items</span> <img src="../image/cart.svg" alt="logo"> </a></li>
         </ul>
     </div>

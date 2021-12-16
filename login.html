@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/64d8096832.js" crossorigin="anonymous"></script>
     <title>The Home Depot: sign in, create account</title>
     <link rel = "icon" href ="https://assets.homedepot-static.com/single-signin-ui/0.557.0/build/7b4c51f66559b768081eabf61db98f2d.svg" type = "image/x-icon">
-    <link rel="stylesheet" href="login.css">
+    <!-- <link rel="stylesheet" href="login.css"> -->
 </head>
 <style>
     
@@ -58,6 +58,8 @@ async function login(){
     let data= await res.json();
 
     console.log(data);
+
+    console.log(data.token);
 
     let username=document.querySelector("#username").value;
 

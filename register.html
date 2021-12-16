@@ -23,7 +23,7 @@
                 <p style="color:rgb(118,188,235);cursor: pointer"><i class="fas fa-chevron-left"> </i> Back</p>
                 <label>Email Address</label>
                 <br>
-                <input type="text" id="username">
+                <input type="text" id="email">
                 <p class="info" id="iemail"></p>
                 <label>Password</label>
                 <br>
@@ -70,73 +70,63 @@
         let ut=true;
         let mt=true;
 
-        let name=document.querySelector("#zip").value;
+        let zip=document.querySelector("#zip").value;
         let password=document.querySelector("#password").value;
-        let username=document.querySelector("#username").value;
+        let email=document.querySelector("#email").value;
         let mobile=document.querySelector("#mobile").value;
 
-        let cbx1=document.querySelector("#cbx1").value;
-        let cbx2=document.querySelector("#cbx2").value;
-
-        if(name.length<5){
-            document.querySelector("#izip").textContent="Please enter a valid 5-digit ZIP Code.";
-            nt=false;
-        }
-        if(password.length<9){
-            document.querySelector("#ipass").textContent="Please add a password.";
-            pt=false;
-        }
-        if(mobile.length<10){
-            document.querySelector("#imob").textContent="Phone numbers must be 10 digits.";
-            mt=false;
-        }
-        if(username.length<1){
-            document.querySelector("#iemail").textContent="Please provide your email address.";
-            ut=false;
-        }
+        // if(zip.length<5){
+        //     document.querySelector("#izip").textContent="Please enter a valid 5-digit ZIP Code.";
+        //     nt=false;
+        // }
+        // if(password.length<9){
+        //     document.querySelector("#ipass").textContent="Please add a password.";
+        //     pt=false;
+        // }
+        // if(mobile.length<10){
+        //     document.querySelector("#imob").textContent="Phone numbers must be 10 digits.";
+        //     mt=false;
+        // }
+        // if(email.length<1){
+        //     document.querySelector("#iemail").textContent="Please provide your email address.";
+        //     ut=false;
+        // }
 
 
 
 
         let rdata={
-            name:name,
-            email:" ",
+            email:email,
             password:password,
-            username:username,
             mobile:mobile,
-            description:" "
+            zip:zip
         };
 
 
+        console.log(rdata)
+
         if(ut==true && pt==true &&  nt==true && mt==true){
-            fefun(rdata)
+            // fefun(rdata)
         }
         
     }
 
-    async function fefun(rdata){
-        rdata=JSON.stringify(rdata);
+    function fefun(rdata){
 
         console.log(rdata);
 
-        let url=`https://masai-api-mocker.herokuapp.com/auth/register`;
+        localStorage.setItem("rdata",JSON.stringify(rdata));
 
-        let res=await fetch (url,{
-            method:"POST",
+       
 
-            body:rdata,
-
-            headers:{
-                "Content-Type":"application/json",
-            },
-        });
-
-        let data= await res.json();
-
-        console.log(data.message);
-        if(data.message=="Registration failed, user already exists"){
-            alert("Registration failed, user already exists")
-        }
+        
+        // console.log(data.message);
+        // if(data.message==""){
+            
+        // }
+        // if(data.message=="Registration failed, user already exists"){
+        //     alert("Registration failed, user already exists")
+        // }
     }
 
 

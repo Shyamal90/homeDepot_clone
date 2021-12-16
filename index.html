@@ -7,6 +7,7 @@
     <title>homedepot.com</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/carousel.css">
+    <link rel="stylesheet" href="./style/footer.css">
 </head>
 <body>
     <div class="container">
@@ -420,6 +421,10 @@
 <script src="./Script/profile.js"></script>
 <script src="./Script/allDepartment.js"></script>
 
-
-
 <script src="./Script/carousel.js"></script>
+
+<script type="module">
+    import footer from "../Component/footer.js";
+
+    document.querySelector(".footerSection").innerHTML = footer();
+</script>

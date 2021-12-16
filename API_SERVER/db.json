@@ -1,0 +1,82 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Lorenzo Brown Polyester High Back Club Chair",
+      "desc": "Noble House",
+      "price": "347.59",
+      "stars": "43",
+      "rating": "410",
+      "modelNo": "Brown",
+      "totalSell": "383.41",
+      "pickUp": "Not sold in stores",
+      "delivary": "Not available in Guam",
+      "productImg": "https://images.thdstatic.com/productImages/7ae260ab-ef50-49b7-8a64-3f7d144e98aa/svn/brown-noble-house-accent-chairs-907-64_400.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Wesley Microfiber Chair with Rolled Arm in Dark Grey",
+      "desc": "Lifestyle Solutions",
+      "price": "184.94",
+      "stars": "81",
+      "rating": "537",
+      "modelNo": "Dark Grey",
+      "totalSell": "243.67",
+      "pickUp": "Unavailable at Guam - Tamuning",
+      "delivary": "Not available in Guam",
+      "productImg": "https://images.thdstatic.com/productImages/61092f3b-0a72-4107-9753-30264f473910/svn/dark-grey-lifestyle-solutions-accent-chairs-ccwenks1m26dgra-64_400.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Alba Gun Metal Swivel Chair",
+      "desc": "Picket House Furnishings\n",
+      "price": "289.06",
+      "stars": "57",
+      "rating": "89",
+      "modelNo": "Gun Metal",
+      "totalSell": "364.56",
+      "pickUp": "Unavailable at Guam - Tamuning",
+      "delivary": "Not available in Guam",
+      "productImg": "https://images.thdstatic.com/productImages/d516f1d8-5e99-4287-9739-15c4185fd66f/svn/gun-metal-picket-house-furnishings-accent-chairs-ust3294102swe-64_400.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Camille Gray/Gold Accent Chair (Set of 2)",
+      "desc": "SAFAVIEH",
+      "price": "369.51",
+      "stars": "2",
+      "rating": "14",
+      "modelNo": "Gray/Gold",
+      "totalSell": "476.8",
+      "pickUp": "Unavailable at Guam - Tamuning",
+      "delivary": "Not available in Guam",
+      "productImg": "https://images.thdstatic.com/productImages/237488ee-4e4e-4be2-ac55-f748549382d8/svn/gray-gold-safavieh-accent-chairs-ach6201a-set2-64_400.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Delphine Linen Cane Accent Chair (Set of 2)",
+      "desc": "JAYDEN CREATION",
+      "price": "558.77",
+      "stars": "59",
+      "rating": "13",
+      "modelNo": "Linen",
+      "totalSell": "623.78",
+      "pickUp": "Unavailable at Guam - Tamuning",
+      "delivary": "Not available in Guam",
+      "productImg": "https://images.thdstatic.com/productImages/42ec5ef9-6812-4607-87d6-01fe39eca12d/svn/linen-jayden-creation-accent-chairs-hm18223-linen-s2-64_400.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Tafton Dark Blue Fabric Tufted Club Chair",
+      "desc": "Noble House",
+      "price": "315.43",
+      "stars": "169",
+      "rating": "741",
+      "modelNo": "Dark Blue",
+      "totalSell": "350.89",
+      "pickUp": "Unavailable at Guam - Tamuning",
+      "delivary": "Not available in Guam",
+      "productImg": "https://images.thdstatic.com/productImages/074718f1-4c67-44eb-b50a-20b9ad638218/svn/dark-blue-noble-house-accent-chairs-10761-64_400.jpg"
+    }
+  ]
+}

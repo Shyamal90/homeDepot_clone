@@ -5,18 +5,26 @@ async function addProduct(){
     const productData = {
         id: document.querySelector("#id").value,
         name: document.querySelector("#name").value,
-        desc:document.querySelector("#description").value,
+        modelNo:document.querySelector("#modelNo").value,
+        rating:document.querySelector("#rating").value,
+        manufacture:document.querySelector("#manufacture").value,
+        productImg:document.querySelector("#productImage").value,
+        colbtn1:document.querySelector("#colbtn1").value,
+        colbtn2:document.querySelector("#colbtn2").value,
+
+        // desc:document.querySelector("#description").value,
         price: document.querySelector("#price").value,
         stars:document.querySelector("#stars").value,
-        rating:document.querySelector("#rating").value,
-        modelNo:document.querySelector("#modelNo").value,
         totalSell:document.querySelector("#totalSell").value,
         pickUp:document.querySelector("#pickUp").value,
-        delivary:document.querySelector("#delivary").value,
-        productImg:document.querySelector("#productImage").value
+        delivery:document.querySelector("#delivery").value,
+        poster1:document.querySelector("#poster1").value,
+        poster2:document.querySelector("#poster2").value,
+        poster3:document.querySelector("#poster3").value,
+        poster4:document.querySelector("#poster4").value,
 
     }
-
+console.log(productData)
     let url = `http://127.0.0.1:5000/api/products`;
 
     let response = await fetch(url,{

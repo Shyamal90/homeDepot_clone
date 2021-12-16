@@ -5,6 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
+      <!----------font awesome cdn ------------->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- bootstrap icons cdn -->
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+
 </head>
 <style>
     body{
@@ -232,13 +249,91 @@
 
 
  #products{
-     height:500px;
+  
+ 
      width:80%;
      border: 1px solid teal;
      margin-top: 10px;
      margin-right: 10px;
  }
 
+#product_container{
+    display: grid;
+  height:548px;
+  width:250px;
+  border:1px solid red;
+  grid-template-columns: auto auto auto auto;
+  gap:30px;
+  padding: 8px;
+}
+
+
+
+  
+ .product{
+     background-color: white;
+ }
+#product_container .product:hover
+{
+    
+    margin:auto;
+    border:1px solid grey;
+   
+}
+
+
+
+
+#product-dropdown{
+    height: 60px;
+    width:256px;
+    border:1px solid greenyellow;
+    position:relative;
+    display: inline-block;
+}
+#product-dropdown-content{
+    display: none;
+    position: absolute;
+    right:0;
+    background-color:white;
+    min-width:250px;
+    z-index: 1;
+}
+#product-dropdown-content a{
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+#addtocartbtn{
+    height:40px;
+    width:240px;
+    margin: auto;
+    border: 1px solid grey;
+    text-align: center;
+}
+ #compare{
+    height:30px;
+    width:180px;
+    border:1px solid red;
+    margin:auto;
+    text-align: center;
+}
+ #product-dropdown:hover #product-dropdown-content {
+    display:block;
+}
+#product_container img{
+    height:249px;
+    width:249px;
+}
+
+#ratingDiv{
+    display: flex;
+  gap:5px;
+}
+  #ratingDiv i{
+      color: orangered;
+  }
+  
  #feedback{
     
   height: 115px;
@@ -289,6 +384,12 @@
    /* Add a dark-grey background on hover */
    cursor: pointer;
 }
+#dropdownpro{
+    display: none;
+}
+/* .product :hover{
+    display: block;
+} */
   
 </style>
 <body>
@@ -518,8 +619,24 @@
 </div>
 
 <div id="products">
+      
+<div id="product_container">
+ 
+    
 
+    </div>
+     <!-- <div id="product-dropdown"> -->
+       <!-- <div id="product-dropdown-content">
+      
+    <button> <a href="#">Checkout</a> </button>
+    <div id="compare"> <a href="#">Compare</a></div>
+    </div> -->
+    <!-- </div> -->
+    
+    
 </div>
+
+</div> 
 
 <div id="feedback">
     <img src="https://sjc1.qualtrics.com/WRQualtricsSiteIntercept/Graphic.php?IM=IM_cUuBXdlHtK4XTdr">
@@ -624,15 +741,96 @@ let url=`http://127.0.0.1:5000/api/products`
         let data = await response.json();
     console.log(data);
   
+    localStorage.setItem("product_Data",JSON.stringify(data))
     display(data)
   
 }
-var body=document.querySelector("body")
+var productDiv=document.getElementById("product_container")
+ 
     function display(data){
         data.map((el)=>{
+           let div=document.createElement("div")
+           div.setAttribute("class","product")
+           let product_dropdown=document.createElement("div")
+            product_dropdown.setAttribute("id","product-dropdown")
+            let product_dropdown_content=document.createElement("div")
+            product_dropdown_content.setAttribute("id","product-dropdown-content")
             let img=document.createElement("img")
+            img.setAttribute("id","product_img")
             img.src=el.productImg
-            body.append(img)
+            
+            let title=document.createElement("h3")
+            title.textContent=el.name
+   
+
+            let manufacture=document.createElement("p")
+            manufacture.innerHTML=`by ${el.manufacture}`
+
+            
+    var rating = document.createElement("div");
+    rating.setAttribute("id", "ratingDiv");
+             var starDiv = document.createElement("div");
+    starDiv.setAttribute("id", "star");
+    starDiv.innerHTML = `<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>`;
+    var rs = starDiv.innerHTML;
+      var points = document.createElement("div");
+    points.setAttribute("id", "pointsDiv");
+    points.textContent = el.stars;
+    var rp = points.textContent;
+    rating.innerHTML = `<p>${rs} </p><p>${rp}</p>`;
+
+            let price=document.createElement("p")
+            price.textContent=el.price;
+
+            let totalSell=document.createElement("p")
+            totalSell.textContent=el.totalSell
+
+            let pickUp=document.createElement("p")
+            pickUp.innerHTML=`${el.pickUp}`
+
+            let delivery=document.createElement("p")
+            delivery.innerHTML=`${el.delivery}`
+              
+            
+            
+            
+            product_dropdown.append(product_dropdown_content)
+
+         
+
+            
+            div.append(img,title,manufacture,rating,price,totalSell,pickUp,delivery,product_dropdown)
+            productDiv.append(div)
+
+            div.addEventListener("mousemove",function(){
+                displaydropdown()
+                
+                 
+            })
+           div.addEventListener("mouseleave",function(){
+               displaynone()
+            })
         })
     }  
+    function displaydropdown(){
+
+        let dropdownpro=document.createElement("div")
+            dropdownpro.setAttribute("id","dropdownpro")
+
+        let addToCartbtn=document.createElement("div")
+        addToCartbtn.setAttribute("id","addtocartbtn")
+        addToCartbtn.innerText="ADD TO CART"
+        
+        
+        let compare=document.createElement("div")
+        compare.setAttribute("id","compare")
+        compare.innerText="Compare"
+        dropdownpro.append(addToCartbtn,compare)
+        // let dropdownpro=document.querySelector(".dropdownpro")
+        // dropdownpro.style.display="block"
+    }
+    function displaynone(){
+        let dropdownpro=document.querySelector(".dropdownpro")
+        dropdownpro.style.display="none"
+    }
 </script>

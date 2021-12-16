@@ -53,7 +53,7 @@
             <button>Create an Account</button>
         </div>
         <div id="ldiv">
-            <p>Already Have an Account? <a href="login.html"> Sign In</a></p>
+            <p>Already Have an Account? <a href="login1.html"> Sign In</a></p>
             <p>By selecting 'Create an Account' you are agreeing to the Pro Xtra Terms and Conditions, Privacy and Security Statement, & My Account Terms and Conditions.</p>
         </div>
     </div>
@@ -69,31 +69,112 @@
         let pt=true;
         let ut=true;
         let mt=true;
+        let a;
 
         let zip=document.querySelector("#zip").value;
         let password=document.querySelector("#password").value;
         let email=document.querySelector("#email").value;
         let mobile=document.querySelector("#mobile").value;
 
-        // if(zip.length<5){
-        //     document.querySelector("#izip").textContent="Please enter a valid 5-digit ZIP Code.";
-        //     nt=false;
-        // }
-        // if(password.length<9){
-        //     document.querySelector("#ipass").textContent="Please add a password.";
-        //     pt=false;
-        // }
-        // if(mobile.length<10){
-        //     document.querySelector("#imob").textContent="Phone numbers must be 10 digits.";
-        //     mt=false;
-        // }
-        // if(email.length<1){
-        //     document.querySelector("#iemail").textContent="Please provide your email address.";
-        //     ut=false;
-        // }
+        if(zip.length<5){
+            document.querySelector("#izip").textContent="Please enter a valid 5-digit ZIP Code.";
+            nt=false;
+        }
+        if(password.length<9){
+            document.querySelector("#ipass").textContent="Please add a password.";
+            pt=false;
+        }
+        if(mobile.length<10){
+            document.querySelector("#imob").textContent="Phone numbers must be 10 digits.";
+            mt=false;
+        }
+        if(email.length<1){
+            document.querySelector("#iemail").textContent="Please provide your email address.";
+            ut=false;
+        }else{
+            a=(emailCheck(email,ut));
+        }
+
+        function emailCheck(line,ut) {
+            var name = "";
+            var std = "abcdefghijklmnopqrstuvwxyz1234567890_-.";
+            var std1 = "abcdefghijklmnopqrstuvwxyz@";
+            var domain = "";
+            var tld = "";
+            var ind = 0;
+            var ind1 = 0;
+            var ind2 = 0;
+            var check1 = true;
+            var check2 = true;
+            var check3 = false;
+
+            for (var i = 0; i < line.length; i++) {
+                if (line[i] == "@") {
+                    break;
+                } else {
+                    name = name + line[i];
+                    ind++;
+                }
+            }
+
+            var nm1 = "";
+            if (name != "") {
+                for (var a = 0; a < name.length; a++) {
+                    for (var b = 0; b < std.length; b++) {
+                        if (name[a] == std[b]) {
+                            nm1 = nm1 + name[a];
+                        }
+                    }
+                }
+            }
+
+            if (nm1 != name) {
+                check1 = false;
+            }
 
 
 
+            for (var j = ind; j < line.length; j++) {
+                if (line[j] == ".") {
+                    break;
+                } else {
+                    domain = domain + line[j];
+                    ind1++;
+                }
+            }
+
+            var dm1 = "";
+            if (domain != "") {
+                for (var a = 0; a < domain.length; a++) {
+                    for (var b = 0; b < std1.length; b++) {
+                        if (domain[a] == std1[b]) {
+                            dm1 = dm1 + domain[a];
+                        }
+                    }
+                }
+            }
+            if ((dm1 == "@") || (dm1 != domain)) {
+                check2 = false;
+            }
+
+
+            for (var k = ind1 + ind; k < line.length; k++) {
+                tld = tld + line[k];
+            }
+
+            if ((tld == ".com") || (tld == ".net") || (tld == ".org")) {
+                check3 = true;
+            }
+            var checker = "";
+            if ((check1 == true) && (check2 == true) && (check3 == true)) {
+            } else {
+                checker = "Please provide your email address, formatted as you@domain.com.";
+                ut=false;
+            }
+            document.querySelector("#iemail").textContent="";
+            document.querySelector("#iemail").textContent=checker;
+            return ut;
+        }
 
         let rdata={
             email:email,
@@ -101,12 +182,8 @@
             mobile:mobile,
             zip:zip
         };
-
-
-        console.log(rdata)
-
-        if(ut==true && pt==true &&  nt==true && mt==true){
-            // fefun(rdata)
+        if(a==true && pt==true &&  nt==true && mt==true){
+            fefun(rdata)
         }
         
     }
@@ -115,18 +192,10 @@
 
         console.log(rdata);
 
-        localStorage.setItem("rdata",JSON.stringify(rdata));
+        localStorage.setItem("rdata", JSON.stringify(rdata));
 
-       
-
-        
-        // console.log(data.message);
-        // if(data.message==""){
-            
-        // }
-        // if(data.message=="Registration failed, user already exists"){
-        //     alert("Registration failed, user already exists")
-        // }
+        alert("Registration Successful");
+        window.location.href="login1.html";
     }
 
 

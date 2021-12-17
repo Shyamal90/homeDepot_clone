@@ -43,9 +43,10 @@
   width: 45%;
   height: 65px;
   margin-left: 15%;
-  /* font-size: 15px; */
-  text-decoration: underline;
   cursor: pointer;
+}
+.r-text:hover {
+  text-decoration: underline;
 }
 .r-text p {
   font-size: 16px;
@@ -59,9 +60,10 @@
   height: 40px;
   margin-left: 15%;
   cursor: pointer;
+  font-size: 12px;
 }
 .r-icon p {
-  font-size: 21px;
+  font-size: 16px;
   margin-top: -3px;
   cursor: pointer;
 }
@@ -134,10 +136,11 @@
   font-weight: bold;
   color: white;
   cursor: pointer;
+  border: none;
 }
 /* Heading-Last Minute Holiday Preperation */
 /* ------START------- */
-#head-last-minute-holiday-prep {
+#head-last-minute-holiday-touches {
   border: 1px solid transparent;
   height: 43px;
   margin-top: 50px;
@@ -145,7 +148,7 @@
 }
 #inside-last-minute {
   border: 1px solid transparent;
-  width: 29%;
+  width: 33%;
   height: 43px;
   text-align-last: justify;
 }
@@ -159,22 +162,26 @@
 }
 /* Container-Last minute holiday preperation  */
 
-#container-last-minute-holiday-prep {
+#container-last-minute-holiday-touches {
   display: flex;
   justify-content: space-around;
   border: 1px solid transparent;
-  height: 448px;
+  height: 400px;
   margin-top: 25px;
 }
 .box-last-minute {
+  /* padding-top: 4%; */
   border: 1px solid transparent;
   height: 96%;
   width: 23%;
   margin: 0.6% 0% 1% 0.3%;
 }
+.box-last-minute:hover {
+  text-decoration: underline;
+}
 .image-last-minute {
   border: 1px solid transparent;
-  height: 65%;
+  height: 75%;
   width: 97%;
   margin: 1%;
   cursor: pointer;
@@ -187,7 +194,7 @@
   margin: 1% 1% 0% 1%;
 }
 .subhead-last-minute h1 {
-  font-size: 24px;
+  font-size: 29px;
   line-height: 30px;
   text-align: center;
   margin-top: 0%;
@@ -206,12 +213,10 @@
 }
 .text-last-minute p {
   font-size: 20px;
+  color: #333333;
   text-align: center;
   margin-top: 0%;
-}
-.text-last-minute p:hover {
-  text-decoration: underline;
-  cursor: pointer;
+  margin-top: -7%;
 }
 /* Shop by Category */
 /* --------START--------- */
@@ -364,26 +369,32 @@
   color: #497e9d;
   padding-left: 1%;
   margin-top: -4%;
-  text-decoration: underline;
   cursor: pointer;
+}
+.p3-tamuning:hover {
+  text-decoration: underline;
 }
 .div-tamuning {
   display: flex;
+}
+.div-tamuning :hover {
+  text-decoration: underline;
 }
 .div-tamuning div {
   flex-grow: 1;
   margin-left: 1%;
   margin-top: 3%;
   color: #497e9d;
-  text-decoration: underline;
   cursor: pointer;
 }
 .div-tamuning-insidediv {
   text-align: end;
   margin-right: 1%;
   color: #497e9d;
-  text-decoration: underline;
   cursor: pointer;
+}
+.div-tamuning-insidediv:hover {
+  text-decoration: underline;
 }
 .container-3-tamuning h2 {
   margin-top: 1.5%;
@@ -393,8 +404,10 @@
   margin-top: 20.5%;
   padding-left: 1%;
   color: #497e9d;
-  text-decoration: underline;
   cursor: pointer;
+}
+.container-3-tamuning:hover p {
+  text-decoration: underline;
 }
 /* ----END----- */
 

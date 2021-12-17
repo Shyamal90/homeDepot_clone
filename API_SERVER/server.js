@@ -16,5 +16,5 @@ server.use(jsonServer.bodyParser);
 server.use('/api',router);
 
 server.listen(port, ()=>{
-    console.log(`JSON SEVER IS RUNNING ON PORT ${port}`)
+    console.log(`JSON SEVER IS RUNNING ON PORT ${port}`);
 })

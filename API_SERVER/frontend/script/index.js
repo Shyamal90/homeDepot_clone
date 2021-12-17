@@ -55,24 +55,24 @@ async function showData(){
 
     console.log(data);
 
-    data.map((product)=>{
-        // document.querySelector("tbody").innerHTML = "";
-        let tr = document.createElement("tr");
+    // data.map((product)=>{
+    //     // document.querySelector("tbody").innerHTML = "";
+    //     // let tr = document.createElement("tr");
 
-        let product_name = document.createElement("td");
-        product_name.innerHTML = product.name;
+    //     // let product_name = document.createElement("td");
+    //     // product_name.innerHTML = product.name;
 
-        let productPrice = document.createElement("td");
-        productPrice.innerHTML = product.price;
+    //     // let productPrice = document.createElement("td");
+    //     // productPrice.innerHTML = product.price;
 
-        let updataBtn = document.createElement("button");
-        updataBtn.innerHTML = "Updata";
-        updataBtn.addEventListener("click",function(){
-            localStorage.setItem("productData",JSON.stringify(product));
+    //     // let updataBtn = document.createElement("button");
+    //     // updataBtn.innerHTML = "Updata";
+    //     // updataBtn.addEventListener("click",function(){
+    //     //     localStorage.setItem("productData",JSON.stringify(product));
             
-        })
+    //     // })
 
-        tr.append(product_name,productPrice,updataBtn);
-        document.querySelector("tbody").append(tr);
-    })
+    //     tr.append(product_name,productPrice,updataBtn);
+    //     document.querySelector("tbody").append(tr);
+    // })
 }

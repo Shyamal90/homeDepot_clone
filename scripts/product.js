@@ -110,23 +110,7 @@ var productDiv=document.getElementById("product_container")
             div.append(img,title,manufacture,rating,price,totalSell,pickUp,delivery,product_dropdown)
             productDiv.append(div)
 
-        //     div.addEventListener("mousemove",function(){
-        //         displaydropdown()
-                
-                 
-        //     })
-        //    div.addEventListener("mouseleave",function(){
-        //        displaynone()
-        //     })
+      
         })
     }  
-    // function displaydropdown(){
-
-     
-    //     // let dropdownpro=document.querySelector(".dropdownpro")
-    //     // dropdownpro.style.display="block"
-    // }
-    // function displaynone(){
-    //     let dropdownpro=document.querySelector(".dropdownpro")
-    //     dropdownpro.style.display="none"
-    // }
+    

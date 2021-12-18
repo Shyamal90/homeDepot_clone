@@ -2,4 +2,37 @@
     border: 1px solid black;
     margin-top: 25px;
     height: 600px;
+    /* width: 1280px; */
+    margin: 80px auto;
+    display: flex;
+}
+
+.leftBox{
+    border: 1px solid brown;
+    width: 50%;
+}
+
+.rightBox{
+    border: 1px solid tomato;
+    width: 50%;
+}
+
+.priceSection{
+    border: 1px solid brown;
+    height: 80px;
+}
+
+.productDetail{
+    border: 1px solid black;
+    height: 180px;
+}
+
+.deliverySection{
+    border: 1px solid black;
+    height: 100px;
+}
+
+.addToCartBtn{
+    border: 1px solid black;
+    height: 100px;
 }

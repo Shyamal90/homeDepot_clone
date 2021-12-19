@@ -1,1 +1,1 @@
-<h1>homeDepot Clone 🚀🚀🚀</h1>
+# homeDepo_clone

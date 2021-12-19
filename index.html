@@ -145,7 +145,7 @@
                             </div>
                         </li>
                         <li><a href="./main/list.html">Lists <img src="./image/heart.svg" alt="logo"> </a></li>
-                        <li><a href="#">Cart <span>|6 items</span> <img src="./image/cart.svg" alt="logo"> </a></li>
+                        <li><a href="#">Cart |<span id="totalItems"> 6 </span> items<img src="./image/cart.svg" alt="logo"> </a></li>
                     </ul>
                 </div>
             </div>
@@ -457,5 +457,10 @@
     }else{
         document.querySelector("#myAccount").textContent = email;
     }
+
+    // Update cart items value
+    let cartItems = JSON.parse(localStorage.getItem("cartData"));
+    let totalItems = cartItems.length;
+    // console.log(totalItems);
 
 </script>

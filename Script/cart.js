@@ -85,6 +85,14 @@ let totalAmount = 0;
         let newAmmount = (totalAmount - 13.99).toFixed(2);
         document.querySelector("#totalAmt").innerHTML = "$" + newAmmount;
 
+        // saving element functionality
+        if(totalAmount > 0){
+            document.querySelector("#savingEl").innerHTML = "-$13.99";
+        }else{
+            document.querySelector("#savingEl").innerHTML = "-$0.00";
+            location.reload();
+        }
+
         box4.append(saveForLater,saveForFavorites,removeItem);
         productDetailContainer.append(box1,box2,box3,box4);
         document.querySelector(".cartWrapper").append(imageContainer,productDetailContainer);

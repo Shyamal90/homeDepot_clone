@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../style/list.css">
     <link rel="stylesheet" href="../style/home.css">
     <link rel="stylesheet" href="../style/listMin.css">
+    <link rel="stylesheet" href="../style/sidebar.css">
 
 </head>
 <body>
@@ -73,8 +74,136 @@
       
 
       <div class="product_wrapper">
-        <div class="filterOptions"></div>
-        <div class="product-container"></div>
+        <div class="filterOptions">
+          <div class="get_fast" style="margin-top:0px;">
+            <div class="content" >
+              <h4>Get It Fast </h4>
+              <div id="gif"></div>
+            </div>
+            <h4 onclick="showGif()"><i style="margin-top:50%;"class="fas fa-chevron-down"></i></h4>
+            
+           </div>
+           <div class="get_fast">
+               <div class="content" >
+                <h4>Availability</h4>
+                <div id="avail"></div>
+               </div>
+            
+               <h4 onclick="showAvail()"><i style="margin-top:50%;"class="fas fa-chevron-down"></i></h4>
+            
+           </div>
+           <div class="get_fast">
+                <div class="content">
+                  <h4>Department</h4>
+                  <div id="department"></div>
+                </div>
+            
+                <h4 onclick="showDep()"><i style="margin-top:50%;"class="fas fa-chevron-down"></i></h4>
+          </div>
+            <div class="get_fast">
+                <div class="content">
+                   <h4>Brand</h4>
+                   <div id="brand"></div>
+                </div>
+            
+                <h4 onclick="showBran()"><i style="margin-top:50%;"class="fas fa-chevron-down"></i></h4>
+           </div>
+           <div class="get_fast">
+              <div class="content">
+                <h4>Price</h4>
+                <div id="prc"></div>
+              </div>
+          
+              <h4 onclick="showPrc()"><i style="margin-top:50%;"class="fas fa-chevron-down"></i></h4>
+        </div>
+            <div class="get_fast">
+                <div class="content">
+                  <h4>Style</h4>
+                  <div id="style"></div>
+                </div>
+            
+                <h4 onclick="showstyle()"><i style="margin-top:50%;"class="fas fa-chevron-down"></i></h4>
+           </div>
+            <div class="get_fast">
+                <div class="content">
+               <h4>Review Rating</h4>
+                </div>
+            
+                <h4><i style="margin-top:50%;"class="fas fa-chevron-down"></i></h4>
+           </div>
+            <div class="get_fast">
+                <div class="content">
+                     <h3>Product Width (in.)</h3>
+                </div>
+          
+                <h3><i style="margin-top:50%;"class="fas fa-chevron-down"></i></h3>
+           </div>
+            <div class="get_fast">
+                <div class="content">
+                 <h4>Savings Center</h4>
+                </div>
+            
+                <h3><i style="margin-top:50%;"class="fas fa-chevron-down"></i></h3>
+           </div>
+            <div class="get_fast">
+                <div class="content">
+                 <h4>Product Depth (in.)</h4>
+                </div>
+            
+                <h4><i style="margin-top:50%;"class="fas fa-chevron-down"></i></h4>
+           </div>
+            <div class="get_fast">
+                <div class="content">
+                   <h4>New Arrival</h4>
+                </div>
+           
+                <h4><i style="margin-top:50%;"class="fas fa-chevron-down"></i></h4>
+           </div>
+            <div class="get_fast">
+                <div class="content">
+                  <h4>Saving by Percentage Off</h4>
+                </div>
+            
+                <h4><i style="margin-top:50%;"class="fas fa-chevron-down"></i></h4>
+           </div>
+            <div class="get_fast">
+                <div class="content">
+                  <h4>Frame Material</h4>
+                </div>
+            
+                <h4><i style="margin-top:50%;"class="fas fa-chevron-down"></i></h4>
+           </div>
+            <div class="get_fast">
+                <div class="content">
+                  <h4>Product Height (in.) </h4>
+                </div>
+            
+                <h4><i style="margin-top:50%;"class="fas fa-chevron-down"></i></h4>
+           </div>
+            <div class="get_fast">
+                <div class="content">
+                 <h4>Color Family </h4>
+                </div>
+            
+                <h4><i style="margin-top:50%;"class="fas fa-chevron-down"></i></h4>
+           </div>
+            <div class="get_fast">
+                <div class="content">
+                     <h4>The Home Depot Events </h4>
+                </div>
+          
+                <h4><i style="margin-top:50%;"class="fas fa-chevron-down"></i></h4>
+           </div>
+            <div class="get_fast">
+                <div class="content">
+                  <h4>Upholstery Material </h4>
+                </div>
+           
+                <h4><i style="margin-top:50%;"class="fas fa-chevron-down"></i></h4>
+           </div>
+        </div>
+        <div class="product-container">
+        </div>
       </div>
 
 
@@ -112,3 +241,4 @@
 <script src="../Script/allDepartment.js" type="module"></script>
 <script src="../Script/db.js"></script>
 <script src="../Script/profileUpdate.js"></script>
+<script src="../script/sidebar.js"></script>

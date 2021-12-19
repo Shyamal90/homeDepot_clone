@@ -49,13 +49,21 @@ let totalAmount = 0;
 
         let pickupBox = document.createElement("div");
         pickupBox.setAttribute("class","pickupBox");
-
+        pickupBox.innerHTML=`<img src="https://www.homedepot.com/mycart/assets/svg/pick-up-false-store-card.svg"> 
+        <p>Store Pick up</p>`
         let homeShipBox = document.createElement("div");
         homeShipBox.setAttribute("class","homeShipBox");
-
+        homeShipBox.innerHTML=`<img style="width:20%"src="https://www.homedepot.com/mycart/assets/svg/delivery-true-card.svg"> 
+        <p>Ship To Home</p>
+        <p>Estimated Arrival</p>
+        <p>Dec 23- Dec 28</p>
+        <h5>FREE</h5>`
         let deliveryBox = document.createElement("div");
         deliveryBox.setAttribute("class","deliveryBox");
-
+         deliveryBox.innerHTML=`<img src="https://www.homedepot.com/mycart/assets/svg/express-false-card.svg">
+         <p>Scheduled Delivery</p>
+         <p>Not Available for this</p>
+         <p>item</p>`
         box3.append(pickupBox,homeShipBox,deliveryBox);
 
         let box4 = document.createElement("div");
@@ -63,11 +71,11 @@ let totalAmount = 0;
 
         let saveForLater = document.createElement("p");
         saveForLater.setAttribute("class","saveForLater");
-        saveForLater.innerHTML = "Save for Later";
+        saveForLater.innerHTML = "Save for Later  |";
 
         let saveForFavorites = document.createElement("p");
         saveForFavorites.setAttribute("class","saveForFavorites");
-        saveForFavorites.innerHTML = "Save to Favorites";
+        saveForFavorites.innerHTML = "Save to Favorites  |";
 
         let removeItem = document.createElement("button");
         removeItem.setAttribute("class","removeItem");
@@ -95,7 +103,8 @@ let totalAmount = 0;
 
         box4.append(saveForLater,saveForFavorites,removeItem);
         productDetailContainer.append(box1,box2,box3,box4);
-        document.querySelector(".cartWrapper").append(imageContainer,productDetailContainer);
+        productContainer.append(imageContainer,productDetailContainer)
+        document.querySelector(".cartWrapper").append(productContainer);
     })
  }
    

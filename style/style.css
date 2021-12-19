@@ -210,11 +210,12 @@
     border-bottom: 4px solid rgb(131, 45, 30);
     color:white;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #registerBtn{
     background-color: white;
-   
+    cursor: pointer;
     border: 3px solid tomato;
     color:tomato;
     font-weight: bold;

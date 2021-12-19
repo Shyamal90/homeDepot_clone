@@ -67,6 +67,7 @@
     margin-left: 15%;
     cursor: pointer;
     font-size: 12px;
+    margin-top: 10px;
   }
   .r-icon p {
     font-size: 16px;
@@ -352,6 +353,8 @@
   }
   .tamuning-2 {
     border: 1px solid #cccccc;
+    font-size: 12px;
+    line-height: 37px;
   }
   .container-3-tamuning {
     border: 1px solid #cccccc;

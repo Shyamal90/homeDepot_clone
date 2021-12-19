@@ -125,7 +125,7 @@
                 </div>
                 <div class="profileSection">
                     <ul>
-                        <li id="myAccount"><a href="#"> My Account <img src="./image/person.svg" alt="logo"> </a>
+                        <li id="myAccount"><a href="#"> <span id="myProfile">My Account</span>  <img src="./image/person.svg" alt="logo"> </a>
                             <div class="registerform">
                                 <div class="registrationBtn">
                                     <a href="../main/emailSignIn.html" ><button id="signinBtn">Sign in</button></a>
@@ -140,12 +140,13 @@
                                         <li><a href="#"><img src="" alt="">Lists</a></li>
                                         <li><a href="#"><img src="" alt="">My Subscriptions</a></li>
                                         <li><a href="#"><img src="" alt="">Military Discount Program</a></li>
+                                        <li id="logOut" style="display: none;"><a href="#"><img src="" alt="">Log out</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </li>
                         <li><a href="./main/list.html">Lists <img src="./image/heart.svg" alt="logo"> </a></li>
-                        <li><a href="#">Cart |<span id="totalItems"> 6 </span> items<img src="./image/cart.svg" alt="logo"> </a></li>
+                        <li><a href="./main/cart.html">Cart |<span id="totalItems"> 6 </span> items<img src="./image/cart.svg" alt="logo"> </a></li>
                     </ul>
                 </div>
             </div>
@@ -446,21 +447,14 @@
 
     document.querySelector(".footerSection").innerHTML = footer();
 
-    let rdata=JSON.parse(localStorage.getItem("rdata"))
-
-    console.log(rdata);
-    let email=rdata.email;
-    console.log(email);
-   
-    if(rdata==null || rdata==undefined){
-
-    }else{
-        document.querySelector("#myAccount").textContent = email;
-    }
-
-    // Update cart items value
-    let cartItems = JSON.parse(localStorage.getItem("cartData"));
-    let totalItems = cartItems.length;
-    // console.log(totalItems);
 
 </script>
+
+<script>
+    // Update cart items value
+    let cartItems = JSON.parse(localStorage.getItem("cartData"));
+    // let totalItems = cartItems.length;
+    console.log(cartItems);
+</script>
+
+<script src="./Script/profileUpdate.js"></script>

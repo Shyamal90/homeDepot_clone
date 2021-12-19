@@ -84,7 +84,7 @@ function navbar(){
     </div>
     <div class="profileSection">
                     <ul>
-                        <li id="myAccount"><a href="#"> My Account <img src="../image/person.svg" alt="logo"> </a>
+                    <li id="myAccount"><a href="#"> <span id="myProfile">My Account</span>  <img src="../image/person.svg" alt="logo"> </a>
                             <div class="registerform">
                                 <div class="registrationBtn">
                                 <a href="../main/emailSignIn.html" ><button id="signinBtn">Sign in</button></a>
@@ -100,6 +100,7 @@ function navbar(){
                                         <li><a href="#"><img src="" alt="">Lists</a></li>
                                         <li><a href="#"><img src="" alt="">My Subscriptions</a></li>
                                         <li><a href="#"><img src="" alt="">Military Discount Program</a></li>
+                                        <li id="logOut" style="display: none;"><a href="#"><img src="" alt="">Log out</a></li>
                                     </ul>
                                 </div>
                             </div>

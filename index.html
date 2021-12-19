@@ -455,6 +455,9 @@
     let cartItems = JSON.parse(localStorage.getItem("cartData"));
     // let totalItems = cartItems.length;
     console.log(cartItems);
+
+    document.querySelector("#totalItems").innerHTML=cartItems.length;
+
 </script>
 
 <script src="./Script/profileUpdate.js"></script>

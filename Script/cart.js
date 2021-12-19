@@ -86,11 +86,11 @@ let totalAmount = 0;
 
         // Count total price
         totalAmount += Number(product.price);
-        totalAmount = totalAmount.toFixed(2);
+        // totalAmount = totalAmount.toFixed(2);
         console.log(totalAmount);
 
         // show Price
-        document.querySelector("#priceEl").innerHTML ="$" + totalAmount;
+        document.querySelector("#priceEl").innerHTML ="$" + totalAmount.toFixed(2);
         let newAmmount = (totalAmount - 13.99).toFixed(2);
         document.querySelector("#totalAmt").innerHTML = "$" + newAmmount;
 
@@ -120,4 +120,5 @@ let totalAmount = 0;
 
         localStorage.setItem("cartData",JSON.stringify(cartStore));
         displayData(cartStore);
+        totalAmount = 0;
     }

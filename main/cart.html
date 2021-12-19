@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Home Depot</title>
+    <link rel = "icon" href ="https://assets.homedepot-static.com/single-signin-ui/0.557.0/build/7b4c51f66559b768081eabf61db98f2d.svg" type = "image/x-icon">
+    <link rel="stylesheet" href="../style/product.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/productDetails.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/list.css">
+    <link rel="stylesheet" href="../style/listMin.css">
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../style/cart.css">
+
+    <!-- font awesome icons -->
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- bootstrap icons cdn -->
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+
+</head>
+<body>
+    <div class="container">
+        <!-- Heading  -->
+        <div class="heading">
+            <p id="retainerHeading">#1 Home Improvement Retailer</p>
+        </div>
+
+
+        <!-- Extra Options -->
+        <div class="extraOptions">
+               <ul>
+                   <li> <a href="#">Store Finder</a></li>
+                   <li> <a href="#">Truck & Tool Rental</a></li>
+                   <li> <a href="#">For the Pro</a></li>
+                   <li> <a href="#">Gigt Cards</a></li>
+                   <li> <a href="#">Credit Services</a></li>
+                   <li> <a href="#">Track Order</a></li>
+                   <li> <a href="#">Help</a></li>
+               </ul> 
+        </div>
+
+        <!-- navbar  -->
+        <nav class="navbar"></nav>
+
+        <!-- show product details in Cart Section-->
+        <div class="cartContainer">
+            <!-- left box -->
+            <div class="leftBox">
+                <!-- banner -->
+                <div class="cartBanner"></div>
+
+                <!-- Cart wrapper -->
+                <div class="cartWrapper"></div>
+            </div>
+            <!-- right box -->
+            <div class="rightBox">
+                <!-- Your Order Section -->
+                <h3>Your Order</h3>
+                <hr>
+
+                <!-- Total Amount Section -->
+                <div class="amount">
+                    <div class="box1">
+                        <p>Subtotal</p>
+                        <p id="priceEl"></p>
+                    </div>
+
+                    <div class="box2">
+                        <p>Savings</p>
+                        <p id="savingEl"></p>
+                    </div>
+
+                    <div class="box3">
+                        <p>Estimated Shipping</p>
+                        <p id="freeEl">FREE</p>
+                    </div>
+
+                    <hr>
+                    <div class="box4">
+                        <p>Total</p>
+                        <p id="totalAmt">$0.00</p>
+                    </div>
+
+                    <div class="box5">
+                        <p>You Saved 1% Off Your Items</p>
+                    </div>
+
+                    <div class="box6">
+                        <div class="logo">
+                            <img src="https://assets.thdstatic.com/images/v1/success.svg" alt="">
+                        </div>
+                        <div class="para">
+                            <p>Free Shipping on Most Orders | Applied</p>
+                            <p>View Details</p>
+                        </div>
+                    </div>
+
+                    <div class="box7">
+                        <p>Have a promo code?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Footer Section -->
+        <footer class="footer">
+
+        </footer>
+    </div>
+</body>
+</html>
+
+<!-- javaScript link -->
+
+
+<script type="module">
+    import navbar from "../Component/navbar.js";
+    import footer from "../Component/footer.js";
+
+    let flag;
+    console.log(navbar);
+    document.querySelector(".navbar").innerHTML = navbar(flag);
+
+    // footer
+    document.querySelector(".footer").innerHTML = footer();
+</script>
+
+<script src="../Script/currentLocation.js" type="module"></script>
+<script src="../Script/delivery.js" type="module"></script>
+<script src="../Script/profile.js" type="module"></script>
+<script src="../Script/allDepartment.js" type="module"></script>
+<script src="../Script/productDetail.js"></script>
+<script src="../Script/cart.js"></script>

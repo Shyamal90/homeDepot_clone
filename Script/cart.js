@@ -86,6 +86,7 @@ let totalAmount = 0;
 
         // Count total price
         totalAmount += Number(product.price);
+        totalAmount = totalAmount.toFixed(2);
         console.log(totalAmount);
 
         // show Price

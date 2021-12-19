@@ -2,7 +2,9 @@ let cartStore = JSON.parse(localStorage.getItem("cartData")) || [];
 console.log(cartStore);
 let totalAmount = 0;
 
-    cartStore.map((product)=>{
+ function displayData(cartStore){
+    document.querySelector(".cartWrapper").innerHTML = ""; 
+    cartStore.map((product,index)=>{
         console.log(product);
         let productContainer = document.createElement("div");
         productContainer.setAttribute("class","productContainer");
@@ -29,7 +31,7 @@ let totalAmount = 0;
 
         let productPrice = document.createElement("p");
         productPrice.setAttribute("class","productPrice");
-        productPrice.innerHTML = product.price;
+        productPrice.innerHTML = Number(product.price).toFixed(2);
 
         box1.append(productName,productPrice);
 
@@ -70,6 +72,9 @@ let totalAmount = 0;
         let removeItem = document.createElement("button");
         removeItem.setAttribute("class","removeItem");
         removeItem.innerHTML = "Remove";
+        removeItem.addEventListener("click",()=>{
+            deleteItem(index);
+        })
 
         // Count total price
         totalAmount += Number(product.price);
@@ -84,3 +89,17 @@ let totalAmount = 0;
         productDetailContainer.append(box1,box2,box3,box4);
         document.querySelector(".cartWrapper").append(imageContainer,productDetailContainer);
     })
+ }
+   
+    window.addEventListener("load",function(){
+        displayData(cartStore);
+    })
+
+    function deleteItem(index){
+        console.log(index);
+
+        cartStore.splice(index,1);
+
+        localStorage.setItem("cartData",JSON.stringify(cartStore));
+        displayData(cartStore);
+    }

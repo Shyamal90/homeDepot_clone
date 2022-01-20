@@ -9,7 +9,7 @@ function footer(){
         >
       </form>
 
-      <div style="margin-left:380px;">
+      <div  id="first_col" style="margin-left:380px;">
         <div>
           <p>Customer Service</p>
           <div>Check Order Status</div>
@@ -22,7 +22,7 @@ function footer(){
           <div>Privacy & Security Center</div>
         </div>
 
-        <div>
+        <div id="second_col">
           <p><span>Resources</span></p>
           <div>Specials & Offers</div>
           <div>DIY Projects & Ideas</div>
@@ -36,7 +36,7 @@ function footer(){
           <div>Subscriptions</div>
         </div>
 
-        <div>
+        <div id="third_col">
           <p>About Us</p>
           <div>Careers</div>
           <div>Corporate Information</div>

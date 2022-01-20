@@ -3,15 +3,13 @@
     padding: 0px;
     /* background-color: rebeccapurple; */
 }
-
 /* container */
 
-.container{
+/* .container{
     /* border: 1px solid black; */
-}
+/* } */ 
 
 /* heading */
-
 .heading{
     border: 1px solid brown;
     height: 30px;
@@ -44,7 +42,7 @@
 
 /* Navbar */
 
-.navbar{
+.navbar1{
     /* border: 1px solid green; */
     height: 80px;
     background-color: white;
@@ -55,6 +53,10 @@
     height: 80px;
     display: grid;
     grid-template-columns: 20% 50% 30%;
+}
+
+#navbar2{
+    display:none
 }
 
 .locationTracker{
@@ -126,11 +128,11 @@
     
 }
 
-.searchbox{
-    /* border: 1px solid tomato; */
-    /* display: flex; */
+/* .searchbox{
+    border: 1px solid tomato; */
+    /* display: flex;
     
-}
+} */
 
 
 
@@ -148,7 +150,7 @@
 #searchfield{
     font-size: 18px;
     padding: 8px;
-    width: 80%;
+    width: 70%;
     border-left:1px solid rgb(119, 119, 119);
     border-top: 1px solid rgb(119, 118, 118);
     border-bottom: 1px solid rgb(128, 127, 127);
@@ -156,9 +158,9 @@
     margin-right: 0px;
 }
 
-.profileSection{
-    /* border: 1px solid orange; */
-}
+/* .profileSection{
+    border: 1px solid orange;
+} */
 
 .profileSection ul{
     display: flex;
@@ -234,11 +236,11 @@
     font-family: "helvetica-neue-bold",Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.nav_catagory{
+/* .nav_catagory{
     /* border: 1px solid black; */
     /* margin: 10px; */
     /* background-color: white; */
-}
+/* } */ 
 
 .nav_catagory ul{
     display: flex;

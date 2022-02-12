@@ -25,31 +25,31 @@
 <hr>
 
 <p>Landing Page</p>
-<img src="./website_sneak_peak/landing page.png" alt="landing_page">
+<img src="./image/landingi.png" alt="landing_page">
 
 <br>
 <hr>
 
 <p>Product Details Page</p>
-<img src="./website_sneak_peak/product_details.png" alt="landing_page">
+<img src="./image/products.png" alt="products_page">
 
 <br>
 <hr>
 
 <p>Cart Section</p>
-<img src="./website_sneak_peak/cart section.png" alt="landing_page">
+<img src="./image/products_details.png" alt="product_details">
 
 <br>
 <hr>
 
 <p>Address Section</p>
-<img src="./website_sneak_peak/checkOutPage.png" alt="landing_page">
+<img src="./image/cart.png" alt="cart_page">
 
 <br>
 <hr>
 
-<p>Payment Page</p>
-<img src="./website_sneak_peak/paymentPage.png" alt="landing_page">
+<p>Checkout Page</p>
+<img src="./image/checkout.png" alt="checkout_page">
 
 <hr>
 <br>
@@ -57,13 +57,7 @@
 <br>
 <br>
 
-<h3>Aman Kumar</h3>
-<ul>
-  <li>Github: isharaman8</li>
-  <li>Github Link: <a href= "https://github.com/isharaman8" >https://github.com/isharaman8</a></li>
-  <li>Email: jacobreynolds4207@gmail.com</li>
-  <li>LinkedIn: <a href="https://www.linkedin.com/in/aman-kumar-71b655158/"> https://www.linkedin.com/in/aman-kumar-71b655158/</a></li>
-</ul>
+
 
 <br>
 

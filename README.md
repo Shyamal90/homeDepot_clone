@@ -71,40 +71,40 @@
 
 <br>
 
-<h3>Rohan Verma</h3>
+<h3>Dasari Rajnarayana</h3>
 <ul>
-  <li>Github: Rohanverma4</li>
-  <li>Github Link: <a href= "https://github.com/Rohanverma4" >https://github.com/Rohanverma4</a></li>
-  <li>Email: </li>
-  <li>LinkedIn: <a href="https://www.linkedin.com/in/rohan-verma-443b38220/"> https://www.linkedin.com/in/rohan-verma-443b38220/</a></li>
+  <li>Github: drajnarayana</li>
+  <li>Github Link: <a href= "https://github.com/drajnarayana" >https://github.com/drajnarayana</a></li>
+  <li>Email:rajnarayanadasari@gmail.com </li>
+  <li>LinkedIn: <a href="https://www.linkedin.com/in/rajnarayana-dasari-63b245118/"> https://www.linkedin.com/in/rajnarayana-dasari-63b245118/</a></li>
 </ul>
 
 <br>
 
-<h3>Shive Kashyap</h3>
+<h3>Aditya Prasad Pattanaik</h3>
 <ul>
-  <li>Github: Shiva-fighter</li>
-  <li>Github Link: <a href= "https://github.com/Shiva-fighter" >https://github.com/Shiva-fighter</a></li>
-  <li>Email: </li>
-  <li>LinkedIn: <a href=""> </a></li>
-</ul>
-
-<br>
-
-<h3>Praveen Belduri</h3>
-<ul>
-  <li>Github: praveen106</li>
-  <li>Github Link: <a href= "https://github.com/praveen106" >https://github.com/praveen106</a></li>
+  <li>Github: app3200</li>
+  <li>Github Link: <a href= "https://github.com/app3200" >https://github.com/app3200</a></li>
   <li>Email: </li>
   <li>LinkedIn: <a href=""> </a></li>
 </ul>
 
 <br>
 
-<h3>Rishav Chauhan</h3>
+<h3>kajal kumari</h3>
 <ul>
-  <li>Github: rishavChauhanKultz</li>
-  <li>Github Link: <a href= "https://github.com/rishavChauhanKultz" >https://github.com/rishavChauhanKultz</a></li>
+  <li>Github: Kajalkumari677</li>
+  <li>Github Link: <a href= "https://github.com/Kajalkumari677" >https://github.com/Kajalkumari677</a></li>
+  <li>Email: </li>
+  <li>LinkedIn: <a href=""> </a></li>
+</ul>
+
+<br>
+
+<h3>ABU RAGHIB UMAR</h3>
+<ul>
+  <li>Github:raghibumar</li>
+  <li>Github Link: <a href= "https://github.com/raghibumar" >https://github.com/raghibumar</a></li>
   <li>Email: </li>
   <li>LinkedIn: <a href=""> </a></li>
 </ul>

@@ -2,19 +2,20 @@
 <hr>
 
 
-<h3>In this Masai School construct week project We have cloned the Home Depot Website <a href="https://www.homedepot.com/" target="_blank">https://www.homedepot.com/</a> .The Home Depot, Inc., commonly known as Home Depot, is the largest home improvement retailer in the United States, supplying tools, construction products, appliances, and services.  We built it in 6 days with the team of 5 collaborators. Some features of our Projects-</br>
+In this Masai School construct week project We have cloned the Home Depot Website <a href="https://www.homedepot.com/" target="_blank">https://www.homedepot.com/</a> .The Home Depot, Inc., commonly known as Home Depot, is the largest home improvement retailer in the United States, supplying tools, construction products, appliances, and services.  We built it in 6 days with the team of 5 collaborators. Some features of our Projects-</br>
   1- Sort products by rating , price , catagory.</br>
   2- Sign-in/Sign-up for user.</br>
   3- Add to cart and modify the cart.</br>
   4- Apply coupon code option on checkout. 
-</h3>
+
 <hr>
 
 <h4>Language used :</h4>
 <ul>
   <li>HTML- HyperText Markup Language</li> 
   <li>CSS - Cascading Style Sheets</li>
-  <li>Advanced JavaScript</li>
+  <li>Advanced JavaScript using API</li>
+  <li>JSON</li>
 </ul>
 
 <hr>
